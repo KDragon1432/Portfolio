@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<p id = "demo1"></p>
+<p id = "demo"></p>
+
+<button onclick = "doStuff()">Push Me</button>
+
+<script>
+
+	
+	function doStuff(){
+	
+	
+	var employees = [
+    {
+    "dept": "accounting", // new property for this object
+    "firstName": "John",
+    // First element
+    "lastName": "Doe",
+    "age": 23
+    },
+    {
+    "dept": "accounting", // new property for this object
+    "firstName": "Mary",
+    // Second Element
+    "lastName": "Smith",
+    "age": 32
+    },
+    {
+    "dept": "sales", // new property for this object
+    "firstName": "Sally",
+    // Third Element
+    "lastName": "Green",
+    "age": 27
+    },
+    {
+    "dept": "sales", // new property for this object
+    "firstName": "Jim",
+    // Fourth Element
+    "lastName": "Galley",
+    "age": 41
+    }
+	]
+	
+	document.getElementById("demo1").innerHTML = "hi";
+	document.getElementById("demo").innerHTML = employees[0].firstName;
+	}
+
+</script>
+
+</html>
